@@ -314,9 +314,17 @@
   });
 
 
-	$('#book_pick_date,#book_off_date').datepicker({
+  $('#book_pick_date').datepicker({
+	'format': 'm/d/yyyy',
+	'autoclose': true,
+	"startDate": "date"
+  });
+
+	$('#book_off_date').datepicker({
 	  'format': 'm/d/yyyy',
-	  'autoclose': true
+	  'autoclose': true,
+	  "startDate": "date"
+
 	});
 	$('#time_pick').timepicker();
 
