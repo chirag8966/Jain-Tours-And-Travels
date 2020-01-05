@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.cssś>
+  <link rel="stylesheet" href="css/owl.theme.default.min.cssś">
   <link rel=" stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/ionicons.min.css">
@@ -18,9 +18,10 @@
   <link rel="stylesheet" href="css/jquery.timepicker.css">
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="images/icon.png">
+
   <link rel="apple-touch-icon" type="image/png" href="images/icon.png" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -80,8 +81,26 @@
                   <div class="form-group ml-2"> <label for="" class="label">Drop-off date</label> <input type="text"
                       class="form-control" id="book_off_date" placeholder="Date"> </div>
                 </div>
+                <div class="form-group"> <label for="" class="label">Pick your ride</label>
+                  <select class="selectForm">
+                    <option value="innova" >Innova</option>
+                    <option value="innova_crysta" >Innova Crysta</option>
+                    <option value="swift_desire" >Swift Desire</option>
+                    <option value="honda_amaze" >Honda Amaze</option>
+                    <option value="honda_city" >Honda City</option>
+                    <option value="traveller_14_seater" >Tempo Traveller 14 Seater</option>
+                    <option value="traveller_17_seater" >Tempo Traveller 17 Seater</option>
+                    <option value="traveller_20_seater" >Tempo Traveller 20 Seater</option>
+                    <option value="traveller_26_seater" >Tempo Traveller 26 Seater</option>
+                    <option value="minibus_nonac_3*2" >Mini bus Non-ac 3*2</option>
+                    <option value="minibus_nonac_2*2" >Mini bus Non-ac 2*2</option>
+                    <option value="minibus_ac_3*2" >Mini bus Ac 3*2</option>
+                    <option value="minibus_ac_2*2" >Mini bus Ac 2*2</option>
+                    <option value="luxury_cars" >luxury cars (Audi , BMW etc)</option>
+                  </select>
+                </div>
                 <div class="form-group"> <label for="" class="label">Pick-up time</label> <input type="text"
-                    class="form-control" id="time_pick" placeholder="Time"> </div>
+                    class="form-control" id="time_pick" placeholder="Time" onkeydown="return false"> </div>
                 <div class="form-group"> <input type="submit" value="Enquire now !" class="btn btn-secondary py-3 px-4">
                 </div>
               </form>
@@ -136,6 +155,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="carousel-car owl-carousel">
+
             <div class="item">
               <div class="car-wrap rounded ftco-animate">
                 <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-1.jpg);"> </div>
@@ -149,47 +169,49 @@
                 </div>
               </div>
             </div>
+
             <div class="item">
-                <div class="car-wrap rounded ftco-animate">
-                  <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-1.jpg);"> </div>
-                  <div class="text">
-                    <h2 class="mb-0">Swift desire</h2>
-                    <div class="d-flex mb-3"> <span class="cat">Maruti</span>
-                    </div>
-                    <p class="text-center mb-0 d-block text-center ">
-                      <a href="#enquiry" class="btn btn-secondary">Enquire Now !</a>
-                    </p>
+              <div class="car-wrap rounded ftco-animate">
+                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-1.jpg);"> </div>
+                <div class="text">
+                  <h2 class="mb-0">Swift desire</h2>
+                  <div class="d-flex mb-3"> <span class="cat">Maruti</span>
                   </div>
+                  <p class="text-center mb-0 d-block text-center ">
+                    <a href="#enquiry" class="btn btn-secondary">Enquire Now !</a>
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <div class="item">
-                  <div class="car-wrap rounded ftco-animate">
-                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-1.jpg);"> </div>
-                    <div class="text">
-                      <h2 class="mb-0">Amaze</h2>
-                      <div class="d-flex mb-3"> <span class="cat">Honda</span>
-                      </div>
-                      <p class="text-center mb-0 d-block text-center ">
-                        <a href="#enquiry" class="btn btn-secondary">Enquire Now !</a>
-                      </p>
-                    </div>
+            <div class="item">
+              <div class="car-wrap rounded ftco-animate">
+                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-1.jpg);"> </div>
+                <div class="text">
+                  <h2 class="mb-0">Amaze</h2>
+                  <div class="d-flex mb-3"> <span class="cat">Honda</span>
                   </div>
+                  <p class="text-center mb-0 d-block text-center ">
+                    <a href="#enquiry" class="btn btn-secondary">Enquire Now !</a>
+                  </p>
                 </div>
+              </div>
+            </div>
 
-                <div class="item">
-                    <div class="car-wrap rounded ftco-animate">
-                      <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-1.jpg);"> </div>
-                      <div class="text">
-                        <h2 class="mb-0">Tempo traveller</h2>
-                        <div class="d-flex mb-3"> <span class="cat">Force Motors</span>
-                        </div>
-                        <p class="text-center mb-0 d-block text-center ">
-                          <a href="#enquiry" class="btn btn-secondary">Enquire Now !</a>
-                        </p>
-                      </div>
-                    </div>
+            <div class="item">
+              <div class="car-wrap rounded ftco-animate">
+                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-1.jpg);"> </div>
+                <div class="text">
+                  <h2 class="mb-0">Tempo traveller</h2>
+                  <div class="d-flex mb-3"> <span class="cat">Force Motors</span>
                   </div>
+                  <p class="text-center mb-0 d-block text-center ">
+                    <a href="#enquiry" class="btn btn-secondary">Enquire Now !</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -406,8 +428,8 @@
                 <li><span class="icon icon-map-marker"></span><span class="text"> Jhabua Tower Main Road, Near Railway
                     Station, Chhoti Gwaltoli, Indore,</span></li>
                 <li><span class="icon icon-phone"></span>
-                    <span>Phone : <a href="tel://1234567920"> 0731 252 9889</a> </span>
-                  </li>
+                  <span>Phone : <a href="tel://07312529889"> 0731 252 9889</a> </span>
+                </li>
               </ul>
             </div>
           </div>
@@ -441,9 +463,7 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
+
   <script src="js/main.js"></script>
 
   <!-- Code injected by live-server -->
