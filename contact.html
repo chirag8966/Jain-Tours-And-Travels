@@ -118,22 +118,22 @@
           </div>
         </div>
         <div class="col-md-8 block-9 mb-md-5">
-          <form action="#" class="request-form ftco-animate bg-primary">
+          <form action="php/message.php" method="POST" class="request-form ftco-animate bg-primary">
             <h2>Book your trip</h2>
-            <div class="form-group"> <label for="" class="label">Source</label> <input type="text" class="form-control"
-                placeholder="Indore" readonly="readonly"> </div>
+            <div class="form-group"> <label for="" class="label">Source</label> <input type="text"
+                class="form-control" placeholder="Indore" name="source" readonly="readonly"> </div>
             <div class="form-group"> <label for="" class="label">Destination</label> <input type="text"
-                class="form-control" placeholder="Ujjain, Omkareshwar etc"> </div>
+                class="form-control" placeholder="Ujjain, Omkareshwar etc" name="destination" required=""> </div>
                 <div class="form-group"> <label for="" class="label">Contact Number</label> <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="10"
-                  class="form-control" placeholder="Phone Number"> </div>
+                  class="form-control" placeholder="Phone Number" name="contact" required=""> </div>
             <div class="d-flex">
               <div class="form-group mr-2"> <label for="" class="label">Pick-up date</label> <input type="text"
-                  class="form-control" id="book_pick_date" placeholder="Date"> </div>
+                  class="form-control" id="book_pick_date" placeholder="Date" name="pickUpDate" required=""> </div>
               <div class="form-group ml-2"> <label for="" class="label">Drop-off date</label> <input type="text"
-                  class="form-control" id="book_off_date" placeholder="Date"> </div>
+                  class="form-control" id="book_off_date" placeholder="Date" name="dropDate" required=""> </div>
             </div>
             <div class="form-group"> <label for="" class="label">Pick your ride</label>
-              <select class="selectForm">
+              <select class="selectForm" name="car" required="">
                 <option value="innova">Innova</option>
                 <option value="innova_crysta">Innova Crysta</option>
                 <option value="swift_desire">Swift Desire</option>
@@ -151,8 +151,8 @@
               </select>
             </div>
             <div class="form-group"> <label for="" class="label">Pick-up time</label>
-              <div class="form-group">
-                <select class="selectForm">
+              <div class="form-group" required="">
+                <select class="selectForm" name="time" >
                   <option value="6:00 am">6 am</option>
                   <option value="7:00 am">7 am</option>
                   <option value="8:00 am">8 am</option>
@@ -174,8 +174,10 @@
                   <option value="12:00 am">12 am</option>
                 </select>
               </div>
+              <div class="form-group"> <input type="submit" value="Book now !"
+                  class="btn btn-secondary py-3 px-4"></div>
             </div>
-            <div class="form-group"> <input type="submit" value="Enquire now !" class="btn btn-secondary py-3 px-4"></div>
+
           </form>
         </div>
       </div>
