@@ -10,6 +10,7 @@
     $dropDate = $_POST['dropDate'];
     $car = $_POST['car'];
 	$time = $_POST['time'];
+	$name = $_POST['name'];
 	
 
 	$contact = '91'.$contact ;
@@ -21,12 +22,12 @@
 	// var_dump ($numbers); die();
 
 	$sender = urlencode('TXTLCL');
-	$message = urlencode("We have recieved your enquiry successfully. \n\nOur team will get back to you soon .  \n\nJain Tour & Travels \n9425055268");
+	$message = urlencode("We have recieved your enquiry successfully. \n\nOur team will get back to you soon .  \n\nJain Tour & Travels \n9425055268 \n7566636610");
  
 	$numbers = implode(',', $numbers);
  
 	// Prepare data for POST request
-	$data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $message );
+	$data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $message);
 	// var_dump ($data); die();
 
  
@@ -41,19 +42,18 @@
 	// Process your response here
 	$response = json_decode($response);
 	if($response->status == "success"){
-		toTravels($contact,$destination,$pickUpDate,$dropDate,$car);
+		toTravels($contact,$destination,$pickUpDate,$dropDate,$car,$name);
 	} else{
-		echo "<script> alert('Oops! Something went wrong please rty again later')</script>";
-		echo "<script> location.href='index.html'; </script>";
+		// print_r($response);
+		echo "<script> alert('Oops! Something went wrong please try again later')</script>";
+		echo "<script> location.href='../index.html'; </script>";
         exit;
 	}
 
-	function toTravels($contact,$destination,$pickUpDate,$dropDate,$car){
+	function toTravels($contact,$destination,$pickUpDate,$dropDate,$car,$name){
 		$apiKey = urlencode('');
-
-
 	$sender = urlencode('TXTLCL');
-	$message = urlencode("Enquiry details from Jain Tour & Travels - \n\nDestination = ".$destination."\nJourney from = ".$pickUpDate."\nJourney Till = ".$dropDate."\nCar = ".$car."\nContact = ".$contact);
+	$message = urlencode("Enquiry details from Jain Tour & Travels - \n\nDestination = ".$destination."\nJourney from = ".$pickUpDate."\nJourney Till = ".$dropDate."\nCar = ".$car."\nName = ".$name."\nContact = ".$contact);
  
 	$numbers = implode(',', $numbers);
  
