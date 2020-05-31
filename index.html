@@ -39,6 +39,20 @@
          <p>We have acquired certain licenses and permissions issued by the government of India to help you reach your home even during complete lockdown. </p>
          <p style="font-weight: bold;">NOTICE - We are completely operational with all the  necessary permissions</p>
         </div>
+        <div class="mb-3 container">
+          <span>Contact us ! - </span>
+          <span>
+            <a href="https://www.instagram.com/jaintourtravels/">
+              <img class="modalContact ml-2" src="images/instagram-sketched.png" alt="instagram">
+
+            </a>
+          </span>
+          <span>
+            <a href="whatsapp://send?text=Hello!&phone=+917566636610">
+              <img class="modalContact" src="images/whatsapp.png" alt="whatsapp">
+            </a>
+          </span>
+        </div>
       </div>
       <div class="text-center mb-3">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -651,8 +665,8 @@ aria-labelledby="exampleModalLongTitle" aria-hidden="true">
               Plan your trips to outstations like Ujjain, Omkareshwar, Maheshwar and many more through our car services
               in Indore. </p>
             <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.instagram.com/jaintourtravels/"><span class="icon-instagram"></span></a></li>
+              <li class="ftco-animate"><a href="whatsapp://send?text=Hello!&phone=+917566636610"><span class="icon-whatsapp"></span></a></li>
             </ul>
           </div>
         </div>
@@ -727,45 +741,6 @@ aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <script src="js/scrollax.min.js"></script>
 
   <script src="js/main.js"></script>
-
-  <!-- Code injected by live-server -->
-  <script type="text/javascript">
-    // <![CDATA[  <-- For SVG support
-    if ('WebSocket' in window) {
-      (function () {
-        function refreshCSS() {
-          var sheets = [].slice.call(document.getElementsByTagName("link"));
-          var head = document.getElementsByTagName("head")[0];
-          for (var i = 0; i < sheets.length; ++i) {
-            var elem = sheets[i];
-            var parent = elem.parentElement || head;
-            parent.removeChild(elem);
-            var rel = elem.rel;
-            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-            }
-            parent.appendChild(elem);
-          }
-        }
-        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-        var address = protocol + window.location.host + window.location.pathname + '/ws';
-        var socket = new WebSocket(address);
-        socket.onmessage = function (msg) {
-          if (msg.data == 'reload') window.location.reload();
-          else if (msg.data == 'refreshcss') refreshCSS();
-        };
-        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-          console.log('Live reload enabled.');
-          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-        }
-      })();
-    }
-    else {
-      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-    }
-    // ]]>
-  </script>
 </body>
 
 </html>
