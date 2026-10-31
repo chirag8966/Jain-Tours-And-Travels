@@ -1,0 +1,42 @@
+name: Deploy to S3 and CloudFront
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  AWS_REGION: ap-south-1
+  S3_BUCKET: jaintourandtravels-site-858098074775
+  CLOUDFRONT_DISTRIBUTION_ID: E33TTLUELX3AY2
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::858098074775:role/GithubDeploy-JainTours
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Sync site to S3
+        run: |
+          aws s3 sync . "s3://${S3_BUCKET}" --delete \
+            --exclude ".git/*" --exclude ".github/*" --exclude ".vscode/*" \
+            --exclude "scss/*" --exclude "php/*" --exclude "*.config" \
+            --exclude "details.txt" --exclude ".gitignore" --exclude "*.DS_Store"
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id "${CLOUDFRONT_DISTRIBUTION_ID}" --paths "/*"
