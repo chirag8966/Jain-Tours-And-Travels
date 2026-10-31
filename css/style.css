@@ -12973,3 +12973,16 @@ textarea.form-control {
 	cursor: pointer;
 	margin-right: 10px;;
 }
+/* ---- Logo ---- */
+.navbar-brand.navbar-brand { padding: 4px 0; text-transform: none; }
+.brand-logo { height: 76px; width: auto; background: #fff; border-radius: 8px; padding: 4px 10px; display: block; }
+.ftco-footer .logo { display: inline-block; }
+.footer-logo { height: 110px; width: auto; background: #fff; border-radius: 8px; padding: 6px 12px; }
+@media (max-width: 575.98px) { .brand-logo { height: 52px; } }
+
+/* ---- Travel services showcase ---- */
+.service-poster { background: #fff; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12); height: 100%; display: flex; flex-direction: column; }
+.service-poster img { width: 100%; display: block; }
+.service-poster-text { padding: 20px; text-align: center; }
+.service-poster-text h3 { font-size: 20px; font-weight: 600; }
+.service-poster-text p { margin-bottom: 15px; }
