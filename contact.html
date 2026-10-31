@@ -79,8 +79,8 @@
 
   <section class="ftco-section contact-section" style="padding: 2em 0 !important;">
     <div class="container">
-      <div class="row d-flex contact-info">
-        <div class="col-md-4">
+      <div class="row d-flex contact-info justify-content-center">
+        <div class="col-md-6">
           <div class="row">
             <div class="col-md-12">
               <div class="border w-100 p-4 rounded mb-2 d-flex">
@@ -120,73 +120,7 @@
 
           </div>
         </div>
-        <div class="col-md-8 block-9 mb-md-5">
-          <form action="php/message.php" method="POST" class="request-form ftco-animate bg-primary">
-            <h2>Book your trip</h2>
-            <div class="form-group"> <label for="" class="label">Source</label> <input type="text"
-                class="form-control" placeholder="Indore" name="source" readonly="readonly"> </div>
-                <div class="form-group"> <label for="" class="label">Name</label> <input type="text"
-                  class="form-control" placeholder="Your Name" name="name" required=""> </div>
-            <div class="form-group"> <label for="" class="label">Destination</label> <input type="text"
-                class="form-control" placeholder="Ujjain, Omkareshwar etc" name="destination" required=""> </div>
-                <div class="form-group"> <label for="" class="label">Contact Number</label> <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="10"
-                  class="form-control" placeholder="Phone Number" name="contact" required=""> </div>
-            <div class="d-flex">
-              <div class="form-group mr-2"> <label for="" class="label">Pick-up date</label> <input type="text"
-                  class="form-control" id="book_pick_date" placeholder="Date" name="pickUpDate" required=""> </div>
-              <div class="form-group ml-2"> <label for="" class="label">Drop-off date</label> <input type="text"
-                  class="form-control" id="book_off_date" placeholder="Date" name="dropDate" required=""> </div>
-            </div>
-            <div class="form-group"> <label for="" class="label">Pick your ride</label>
-              <select class="selectForm" name="car" required="">
-                <option value="innova">Innova</option>
-                <option value="innova_crysta">Innova Crysta</option>
-                <option value="swift_desire">Swift Desire</option>
-                <option value="honda_amaze">Honda Amaze</option>
-                <option value="honda_city">Honda City</option>
-                <option value="traveller_14_seater">Tempo Traveller 14 Seater</option>
-                <option value="traveller_17_seater">Tempo Traveller 17 Seater</option>
-                <option value="traveller_20_seater">Tempo Traveller 20 Seater</option>
-                <option value="traveller_26_seater">Tempo Traveller 26 Seater</option>
-                <option value="minibus_nonac_3*2">Mini bus Non-ac 3*2</option>
-                <option value="minibus_nonac_2*2">Mini bus Non-ac 2*2</option>
-                <option value="minibus_ac_3*2">Mini bus Ac 3*2</option>
-                <option value="minibus_ac_2*2">Mini bus Ac 2*2</option>
-                <option value="luxury_cars">luxury cars (Audi , BMW etc)</option>
-                <option value="other">other</option>
-              </select>
-            </div>
-            <div class="form-group"> <label for="" class="label">Pick-up time</label>
-              <div class="form-group" required="">
-                <select class="selectForm" name="time" >
-                  <option value="6:00 am">6 am</option>
-                  <option value="7:00 am">7 am</option>
-                  <option value="8:00 am">8 am</option>
-                  <option value="9:00 am">9 am</option>
-                  <option value="10:00 am">10 am</option>
-                  <option value="11:00 am">11 am</option>
-                  <option value="12:00 am">12 pm</option>
-                  <option value="1:00 pm">1 pm</option>
-                  <option value="2:00 pm">2 pm</option>
-                  <option value="3:00 pm">3 pm</option>
-                  <option value="4:00 pm">4 pm</option>
-                  <option value="5:00 pm">5 pm</option>
-                  <option value="6:00 pm">6 pm</option>
-                  <option value="7:00 pm">7 pm</option>
-                  <option value="8:00 pm">8 pm</option>
-                  <option value="9:00 pm">9 pm</option>
-                  <option value="10:00 pm">10 pm</option>
-                  <option value="11:00 pm">11 pm</option>
-                  <option value="12:00 am">12 am</option>
-                </select>
               </div>
-              <div class="form-group"> <input type="submit" value="Book now !"
-                  class="btn btn-secondary py-3 px-4"></div>
-            </div>
-
-          </form>
-        </div>
-      </div>
       <div class="row justify-content-center">
         <div class="col-md-12">
           <iframe
