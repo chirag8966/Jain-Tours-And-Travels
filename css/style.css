@@ -12973,3 +12973,148 @@ textarea.form-control {
 	cursor: pointer;
 	margin-right: 10px;;
 }
+/* ---- Logo ---- */
+.navbar-brand.navbar-brand { padding: 4px 0; text-transform: none; }
+.brand-logo { height: 76px; width: auto; background: #fff; border-radius: 8px; padding: 4px 10px; display: block; }
+.ftco-footer .logo { display: inline-block; }
+.footer-logo { height: 110px; width: auto; background: #fff; border-radius: 8px; padding: 6px 12px; }
+@media (max-width: 575.98px) { .brand-logo { height: 52px; } }
+
+/* ---- Travel services showcase ---- */
+.service-poster { background: #fff; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12); height: 100%; display: flex; flex-direction: column; }
+.service-poster img { width: 100%; display: block; }
+.service-poster-text { padding: 20px; text-align: center; }
+.service-poster-text h3 { font-size: 20px; font-weight: 600; }
+.service-poster-text p { margin-bottom: 15px; }
+
+/* ---- Mobile optimisation ---- */
+img { height: auto; }
+@media (max-width: 767.98px) {
+  .hero-wrap { height: 400px !important; background-position: center center; }
+  .hero-wrap.ftco-degree-bg { background-image: url('../images/bg_1-mobile.jpg') !important; }
+  .hero-wrap.hero-wrap-2 { height: 240px !important; background-image: url('../images/bg_3-mobile.jpg') !important; }
+  .hero-wrap { position: relative; }
+  .hero-wrap .overlay, .hero-wrap.hero-wrap-2 .overlay { height: 100% !important; }
+  .hero-wrap .slider-text, .hero-wrap.hero-wrap-2 .slider-text { height: 100% !important; }
+  .bookingform .about-grid img { max-width: 72% !important; }
+  .bookingform .container { padding-left: 10px; padding-right: 10px; }
+  .bookingform .row { margin-left: 0; margin-right: 0; }
+  .hero-wrap .text { margin-bottom: 0 !important; padding-bottom: 0 !important; padding-top: 40px; }
+  .hero-wrap h1 { font-size: 26px; line-height: 1.25; margin-bottom: 12px !important; }
+  .hero-wrap .text p { font-size: 14px !important; line-height: 1.5; }
+  .hero-wrap .breadcrumbs { font-size: 12px; }
+  .hero-wrap h1.bread { font-size: 28px; }
+  .ftco-section { padding: 3em 0; }
+  .ftco-navbar-light { padding: 6px 15px; background: rgba(0, 0, 0, 0.85) !important; }
+  .brand-logo { height: 52px; }
+  .navbar-toggler { font-size: 14px; padding: 6px 4px; }
+  .bookingform .about-grid { flex: 0 0 33.333%; max-width: 33.333%; margin-top: 0 !important; }
+  .bookingform .about-grid h4 { font-size: 13px; margin: 4px 0 18px; }
+  .bookingform .about-head .row { margin-bottom: 0 !important; }
+  .heading-section h2 { font-size: 26px; }
+  .heading-section p { font-size: 14px; }
+  #travel-services .row { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory; padding-bottom: 12px; margin: 0 -15px; }
+  #travel-services .row > [class*="col-"] { flex: 0 0 82%; max-width: 82%; scroll-snap-align: center; }
+  .service-poster-text { padding: 14px; }
+  .service-poster-text h3 { font-size: 17px; }
+  .service-poster-text p { font-size: 13px; margin-bottom: 10px; }
+  .services.services-2 .icon { width: 72px; height: 72px; }
+  .services.services-2 .icon span { font-size: 32px; }
+  .services-2 .heading { font-size: 15px; }
+  .services-2 p { font-size: 13px; }
+  section .row > [class*="col-sm-6"] { flex: 0 0 50%; max-width: 50%; }
+  .carousel-car .item .car-wrap .img { height: 180px; }
+  .testimony-wrap .text p { font-size: 14px; }
+  .ftco-counter .number { font-size: 30px; }
+  .ftco-footer { padding: 3em 0; }
+  .ftco-footer .ftco-footer-widget { margin-left: 0 !important; }
+  .modal-dialog { margin: 0.75rem; }
+  .btn { padding: 10px 16px; }
+}
+@media (max-width: 575.98px) {
+  .container { padding-left: 18px; padding-right: 18px; }
+}
+
+/* ---- Navbar redesign (navy + gold, matches logo) ---- */
+html, body { overflow-x: clip; }
+.ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item > .nav-link { font-weight: 500; letter-spacing: 0.03em; }
+.ftco-navbar-light.ftco_navbar .nav-item.nav-cta > .nav-link {
+  background: linear-gradient(135deg, #d4a84f, #a87a22);
+  color: #fff !important;
+  border-radius: 999px;
+  padding: 9px 20px !important;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(168, 122, 34, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.ftco-navbar-light.ftco_navbar .nav-item.nav-cta > .nav-link:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(168, 122, 34, 0.5); color: #fff !important; }
+.ftco-navbar-light.ftco_navbar .nav-item.nav-cta .icon-phone { margin-right: 6px; font-size: 14px; }
+
+@media (min-width: 992px) {
+  .ftco-navbar-light.ftco_navbar { top: 0; padding: 14px 0; background: linear-gradient(180deg, rgba(11, 27, 48, 0.72), rgba(11, 27, 48, 0)) !important; }
+  .ftco-navbar-light.ftco_navbar .brand-logo { box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25); }
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item { display: flex; align-items: center; }
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item:not(.nav-cta) > .nav-link { position: relative; padding: 0.6rem 16px; text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45); }
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item:not(.nav-cta) > .nav-link::after {
+    content: ""; position: absolute; left: 16px; right: 16px; bottom: 2px; height: 2px; border-radius: 2px;
+    background: #e8c37a; transform: scaleX(0); transform-origin: left; transition: transform 0.25s ease;
+  }
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item:not(.nav-cta) > .nav-link:hover::after,
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item.active > .nav-link::after { transform: scaleX(1); }
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item > .nav-link:hover,
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item.active > .nav-link { color: #e8c37a; }
+  .ftco-navbar-light.ftco_navbar .nav-item.nav-cta { margin-left: 14px; }
+  /* scrolled: frosted white bar */
+  .ftco-navbar-light.ftco_navbar.scrolled { background: rgba(255, 255, 255, 0.96) !important; padding: 6px 0; box-shadow: 0 4px 24px rgba(11, 27, 48, 0.12); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+  .ftco-navbar-light.ftco_navbar.scrolled .brand-logo { box-shadow: none; padding: 0; height: 60px; }
+  .ftco-navbar-light.ftco_navbar.scrolled .navbar-nav > .nav-item:not(.nav-cta) > .nav-link { color: #0b1b30 !important; text-shadow: none; }
+  .ftco-navbar-light.ftco_navbar.scrolled .navbar-nav > .nav-item:not(.nav-cta) > .nav-link:hover,
+  .ftco-navbar-light.ftco_navbar.scrolled .navbar-nav > .nav-item.active > .nav-link { color: #a87a22 !important; }
+  .ftco-navbar-light.ftco_navbar.scrolled .navbar-nav > .nav-item:not(.nav-cta) > .nav-link::after { background: #a87a22; }
+}
+
+@media (max-width: 991.98px) {
+  .ftco-navbar-light.ftco_navbar,
+  .ftco-navbar-light.ftco_navbar.scrolled {
+    position: -webkit-sticky; position: sticky; top: 0; margin-top: 0 !important;
+    background: rgba(255, 255, 255, 0.97) !important; padding: 8px 16px;
+    box-shadow: 0 2px 16px rgba(11, 27, 48, 0.12); border-bottom: 3px solid #c79a43; z-index: 1030;
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  }
+  .ftco-navbar-light.ftco_navbar .container { padding-left: 0; padding-right: 0; }
+  .ftco-navbar-light.ftco_navbar .brand-logo,
+  .ftco-navbar-light.ftco_navbar.scrolled .brand-logo { height: 46px; padding: 0; background: transparent; border-radius: 0; box-shadow: none; }
+  .ftco-navbar-light.ftco_navbar .navbar-toggler,
+  .ftco-navbar-light.ftco_navbar.scrolled .navbar-toggler {
+    border: 1px solid rgba(11, 27, 48, 0.2) !important; border-radius: 10px; color: #0b1b30 !important;
+    padding: 8px 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em;
+  }
+  .ftco-navbar-light.ftco_navbar .navbar-collapse { margin-top: 8px; border-top: 1px solid #eee; padding-top: 4px; }
+  .ftco-navbar-light.ftco_navbar .navbar-nav { padding-bottom: 8px; }
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item:not(.nav-cta) > .nav-link,
+  .ftco-navbar-light.ftco_navbar.scrolled .navbar-nav > .nav-item:not(.nav-cta) > .nav-link {
+    color: #0b1b30 !important; font-size: 16px; padding: 13px 6px !important; border-bottom: 1px solid #f0f0f0;
+  }
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item.active:not(.nav-cta) > .nav-link,
+  .ftco-navbar-light.ftco_navbar.scrolled .navbar-nav > .nav-item.active:not(.nav-cta) > .nav-link {
+    color: #a87a22 !important; font-weight: 600; border-left: 3px solid #c79a43; padding-left: 12px !important;
+  }
+  .ftco-navbar-light.ftco_navbar .nav-item.nav-cta { margin-top: 12px; }
+  .ftco-navbar-light.ftco_navbar .nav-item.nav-cta > .nav-link { display: block; text-align: center; padding: 12px 20px !important; font-size: 16px; }
+}
+
+/* ---- Cars page ---- */
+.car-wrap .img { display: flex; align-items: center; justify-content: center; background: #fff; }
+.car-wrap .img picture { display: block; width: 100%; height: 100%; }
+.car-wrap .img img { width: 100%; height: 100%; object-fit: contain; display: block; }
+@media (max-width: 767.98px) {
+  .col-6 > .car-wrap .img { height: 120px !important; }
+  .col-6 > .car-wrap .text { padding: 10px 12px 16px; }
+  .col-6 > .car-wrap .text h2 { font-size: 14px; line-height: 1.3; min-height: 36px; }
+  .col-6 > .car-wrap .text span.cat { font-size: 12px; }
+  .col-6 > .car-wrap .text p.d-block a { width: 100%; padding: 8px 10px; font-size: 13px; }
+  .col-6 > .car-wrap { margin-bottom: 14px; }
+}
+
+/* ---- Car images: never tile the picture ---- */
+.car-wrap .img { background-repeat: no-repeat; background-position: center; background-size: contain; }
