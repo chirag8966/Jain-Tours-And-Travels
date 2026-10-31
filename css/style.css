@@ -12990,7 +12990,6 @@ textarea.form-control {
 /* ---- Mobile optimisation ---- */
 img { height: auto; }
 @media (max-width: 767.98px) {
-  html, body { overflow-x: hidden; }
   .hero-wrap { height: 400px !important; background-position: center center; }
   .hero-wrap.ftco-degree-bg { background-image: url('../images/bg_1-mobile.jpg') !important; }
   .hero-wrap.hero-wrap-2 { height: 240px !important; background-image: url('../images/bg_3-mobile.jpg') !important; }
@@ -13034,4 +13033,72 @@ img { height: auto; }
 }
 @media (max-width: 575.98px) {
   .container { padding-left: 18px; padding-right: 18px; }
+}
+
+/* ---- Navbar redesign (navy + gold, matches logo) ---- */
+html, body { overflow-x: clip; }
+.ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item > .nav-link { font-weight: 500; letter-spacing: 0.03em; }
+.ftco-navbar-light.ftco_navbar .nav-item.nav-cta > .nav-link {
+  background: linear-gradient(135deg, #d4a84f, #a87a22);
+  color: #fff !important;
+  border-radius: 999px;
+  padding: 9px 20px !important;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(168, 122, 34, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.ftco-navbar-light.ftco_navbar .nav-item.nav-cta > .nav-link:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(168, 122, 34, 0.5); color: #fff !important; }
+.ftco-navbar-light.ftco_navbar .nav-item.nav-cta .icon-phone { margin-right: 6px; font-size: 14px; }
+
+@media (min-width: 992px) {
+  .ftco-navbar-light.ftco_navbar { top: 0; padding: 14px 0; background: linear-gradient(180deg, rgba(11, 27, 48, 0.72), rgba(11, 27, 48, 0)) !important; }
+  .ftco-navbar-light.ftco_navbar .brand-logo { box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25); }
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item { display: flex; align-items: center; }
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item:not(.nav-cta) > .nav-link { position: relative; padding: 0.6rem 16px; text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45); }
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item:not(.nav-cta) > .nav-link::after {
+    content: ""; position: absolute; left: 16px; right: 16px; bottom: 2px; height: 2px; border-radius: 2px;
+    background: #e8c37a; transform: scaleX(0); transform-origin: left; transition: transform 0.25s ease;
+  }
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item:not(.nav-cta) > .nav-link:hover::after,
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item.active > .nav-link::after { transform: scaleX(1); }
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item > .nav-link:hover,
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item.active > .nav-link { color: #e8c37a; }
+  .ftco-navbar-light.ftco_navbar .nav-item.nav-cta { margin-left: 14px; }
+  /* scrolled: frosted white bar */
+  .ftco-navbar-light.ftco_navbar.scrolled { background: rgba(255, 255, 255, 0.96) !important; padding: 6px 0; box-shadow: 0 4px 24px rgba(11, 27, 48, 0.12); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+  .ftco-navbar-light.ftco_navbar.scrolled .brand-logo { box-shadow: none; padding: 0; height: 60px; }
+  .ftco-navbar-light.ftco_navbar.scrolled .navbar-nav > .nav-item:not(.nav-cta) > .nav-link { color: #0b1b30 !important; text-shadow: none; }
+  .ftco-navbar-light.ftco_navbar.scrolled .navbar-nav > .nav-item:not(.nav-cta) > .nav-link:hover,
+  .ftco-navbar-light.ftco_navbar.scrolled .navbar-nav > .nav-item.active > .nav-link { color: #a87a22 !important; }
+  .ftco-navbar-light.ftco_navbar.scrolled .navbar-nav > .nav-item:not(.nav-cta) > .nav-link::after { background: #a87a22; }
+}
+
+@media (max-width: 991.98px) {
+  .ftco-navbar-light.ftco_navbar,
+  .ftco-navbar-light.ftco_navbar.scrolled {
+    position: -webkit-sticky; position: sticky; top: 0; margin-top: 0 !important;
+    background: rgba(255, 255, 255, 0.97) !important; padding: 8px 16px;
+    box-shadow: 0 2px 16px rgba(11, 27, 48, 0.12); border-bottom: 3px solid #c79a43; z-index: 1030;
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  }
+  .ftco-navbar-light.ftco_navbar .container { padding-left: 0; padding-right: 0; }
+  .ftco-navbar-light.ftco_navbar .brand-logo,
+  .ftco-navbar-light.ftco_navbar.scrolled .brand-logo { height: 46px; padding: 0; background: transparent; border-radius: 0; box-shadow: none; }
+  .ftco-navbar-light.ftco_navbar .navbar-toggler,
+  .ftco-navbar-light.ftco_navbar.scrolled .navbar-toggler {
+    border: 1px solid rgba(11, 27, 48, 0.2) !important; border-radius: 10px; color: #0b1b30 !important;
+    padding: 8px 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em;
+  }
+  .ftco-navbar-light.ftco_navbar .navbar-collapse { margin-top: 8px; border-top: 1px solid #eee; padding-top: 4px; }
+  .ftco-navbar-light.ftco_navbar .navbar-nav { padding-bottom: 8px; }
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item:not(.nav-cta) > .nav-link,
+  .ftco-navbar-light.ftco_navbar.scrolled .navbar-nav > .nav-item:not(.nav-cta) > .nav-link {
+    color: #0b1b30 !important; font-size: 16px; padding: 13px 6px !important; border-bottom: 1px solid #f0f0f0;
+  }
+  .ftco-navbar-light.ftco_navbar .navbar-nav > .nav-item.active:not(.nav-cta) > .nav-link,
+  .ftco-navbar-light.ftco_navbar.scrolled .navbar-nav > .nav-item.active:not(.nav-cta) > .nav-link {
+    color: #a87a22 !important; font-weight: 600; border-left: 3px solid #c79a43; padding-left: 12px !important;
+  }
+  .ftco-navbar-light.ftco_navbar .nav-item.nav-cta { margin-top: 12px; }
+  .ftco-navbar-light.ftco_navbar .nav-item.nav-cta > .nav-link { display: block; text-align: center; padding: 12px 20px !important; font-size: 16px; }
 }

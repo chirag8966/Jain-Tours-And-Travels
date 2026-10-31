@@ -4,3 +4,4 @@ Disallow: /php/
 Disallow: /pricing.html
 Disallow: /info.html
 Disallow: /car-single.html
+Sitemap: https://www.jaintourandtravels.com/sitemap.xml
