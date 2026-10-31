@@ -1,3 +1,10 @@
+(function () {
+	// always open a page at the top (no restored scroll position), unless linking to an #anchor
+	if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+	if (!window.location.hash) { window.scrollTo(0, 0); }
+	window.addEventListener('pageshow', function (e) { if (e.persisted && !window.location.hash) { window.scrollTo(0, 0); } });
+})();
+
 AOS.init({
 	duration: 800,
 	easing: 'slide'
