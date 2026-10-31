@@ -13115,3 +13115,6 @@ html, body { overflow-x: clip; }
   .col-6 > .car-wrap .text p.d-block a { width: 100%; padding: 8px 10px; font-size: 13px; }
   .col-6 > .car-wrap { margin-bottom: 14px; }
 }
+
+/* ---- Car images: never tile the picture ---- */
+.car-wrap .img { background-repeat: no-repeat; background-position: center; background-size: contain; }
