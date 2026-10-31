@@ -329,9 +329,5 @@ AOS.init({
 	$('#time_pick').timepicker({
 	});
 
-	$(window).on('load',function(){
-        $('#coronaModal').modal('show');
-    });
-
 })(jQuery);
 
